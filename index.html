@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Web Development Workshop</h1>
+    <p>A hands-on workshop introducing HTML, CSS, and JavaScript for beginners.</p>
+  </header>
+
+  <section class="event-info">
+    <h2>Event Information</h2>
+    <p>Date: 25th March 2026</p>
+    <p>Mode: Online & Offline</p>
+    <p>Venue: ABC Engineering College Auditorium</p>
+  </section>
+
+  <section class="registration-form">
+    <h2>Registration Form</h2>
+    <form id="regForm">
+      <label>Name:</label>
+      <input type="text" id="name" required><br>
+
+      <label>Email:</label>
+      <input type="email" id="email" required><br>
+
+      <label>Phone:</label>
+      <input type="tel" id="phone" required><br>
+
+      <label>Date of Birth:</label>
+      <input type="date" id="dob" required><br>
+
+      <label>Gender:</label>
+      <select id="gender" required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select><br>
+
+      <label>Event Mode:</label>
+      <select id="mode" required>
+        <option value="">Select</option>
+        <option>Online</option>
+        <option>Offline</option>
+      </select><br>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section class="participants">
+    <h2>Registered Participants</h2>
+    <table id="participantsTable">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Mode</th>
+      </tr>
+      <tr>
+        <td>XYZ</td>
+        <td>xyz@gmail.com</td>
+        <td>9876543210</td>
+        <td>Offline</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>Contact Email: events@abccollege.edu</p>
+    <p>Help Desk Number: +91 94444 12345</p>
+    <p>Support Timings: 9:00 AM - 4:30 PM (Working Days Only)</p>
+    <p>&copy; 2026 Department of Computer Science, ABC Engineering College. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
